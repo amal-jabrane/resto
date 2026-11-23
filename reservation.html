@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fast & Tasty</h1>
+        <h2>Notre Menu Complet</h2>
+        <figure>
+            <figcaption>interieur de resto</figcaption>
+            <img src="image/resto.jpg" alt="interieur de resto de Fast & Tasty">
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="index.html#a-propos">A prospos</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Réservation</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="reservation-section">
+            <h2>Formulaire de Réservation</h2>
+            <p>Remplissez le formulaire ci-dessous pour réserver votre table :</p>
+            <form id="form-reservation" novalidate>
+                <div>
+                    <label for="nom">Nom complet :</label><br>
+                    <input type="text" id="nom" name="nom" required>
+                    <p id="erreur-nom" class="erreur"></p>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Adresse Email :</label><br>
+                    <input type="email" id="email" name="email" placeholder="exemple@tn.com" required>
+                     <p id="erreur-email" class="erreur"></p>
+                </div>
+                <div>
+                    <label for="telephone">Téléphone :</label><br>
+                     <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" placeholder="+21674000000" required>
+                      <p id="erreur-telephone" class="erreur"></p>
+                </div>
+                <br>
+                <div>
+                    <label for="personnes">Nombre de personnes :</label><br>
+                    <input type="number" id="personnes" name="personnes" min="1" max="10" required>
+                     <p id="erreur-personnes" class="erreur"></p>
+                </div>
+                <br>
+                <div>
+                    <label for="date">Date :</label><br>
+                    <input type="date" id="date" name="date" required>
+                     <p id="erreur-date" class="erreur"></p>
+                </div>
+                <br>
+                <div>
+                    <label for="heure">Heure :</label><br>
+                    <input type="time" id="heure" name="heure" required>
+                    <p id="erreur-heure" class="erreur"></p>
+                </div>
+                <br>
+                <div>
+                    <label for="emplacement">Emplacement de la table :</label><br>
+                    <select id="emplacement" name="emplacement">
+                        <option value="interieur">À l'intérieur (En salle)</option>
+                        <option value="terrasse">En terrasse (À l'extérieur)</option>
+                        <option value="famille">Espace Famille</option>
+                    </select>
+                </div>
+                 <div>
+                    <label for="gout">Préférence de goût :</label><br>
+                    <select id="gout" name="gout">
+                        <option value="normal">Normal</option>
+                        <option value="epice">Épicé (حار)</option>
+                        <option value="sans-piment">Sans piment (مش حار)</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="allergies">Régime ou Allergies (optionnel) :</label><br>
+                    <input type="text" id="allergies" name="allergies" placeholder="Ex: Sans gluten, allergie aux fruits de mer...">
+                </div>
+                <br>
+                <div>
+                    <label for="remarques">Remarques ou demandes spéciales :</label><br>
+                    <input type="text" id="remarque" name="remarque" >
+                    <p id="erreur-remarque" class="erreur"></p>
+                <div>
+                    <button type="submit">Confirmer la réservation</button>
+                    <p id="message-succes"></p>
+                </div>
+            </form>
+        </section>
+        </main>
+    </header>
+    <footer>
+         <ul>
+                <li><p>telephone:+216 74 000 000</p></li>
+                <li><a href="mailto:contact@fast&tasty.tn">Email</a></li>
+                <li><a href="https://www.facebook.com/fast&tasty" target="_blank" rel="noopener">facebook</a></li>  
+                <li><a href="https://www.instagramm.com/fast&tasty" target="_blank" rel="noopener">Instagramm</a></li> 
+                 <li><a href="https://www.linkedin.com/fast&tasty" target="_blank" rel="noopener">Linkedin</a></li>                      
+            </ul>
+        <div>
+        <h1>Horaires</h1>
+         <p>Samdi-Jeudi:8h-20h</p>
+         <p>Vendredi:8h-12h</p>
+        </div>
+        <div>
+         <h1>Nous trouvez</h1>
+         <p>12,7 nouvombre,Sfax Centre ,Tunis</p>
+        </div>
+        <div>
+         <h1>Livraison</h1>
+         <p>Livraison sur tout Sfax a seulement 8 DT</p>
+        </div>
+    </footer>
+    <script src="reservation.js"></script>
+</body>
+</html>
