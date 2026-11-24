@@ -20,9 +20,9 @@
                 <li><a href="index.html#contact">Contact</a></li>
                 <li><a href="index.html">Acceuil</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="reservation.html">Réservation</a></li>
             </ul>
         </nav>
+    </header>
         <main>
             <section id="reservation-section">
             <h2>Formulaire de Réservation</h2>
@@ -41,7 +41,7 @@
                 </div>
                 <div>
                     <label for="telephone">Téléphone :</label><br>
-                     <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" placeholder="+21674000000" required>
+                     <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" placeholder="74000000" required>
                       <p id="erreur-telephone" class="erreur"></p>
                 </div>
                 <br>
@@ -86,9 +86,10 @@
                 </div>
                 <br>
                 <div>
-                    <label for="remarques">Remarques ou demandes spéciales :</label><br>
+                    <label for="remarque">Remarque ou demandes spéciales :</label><br>
                     <input type="text" id="remarque" name="remarque" >
                     <p id="erreur-remarque" class="erreur"></p>
+                </div>
                 <div>
                     <button type="submit">Confirmer la réservation</button>
                     <p id="message-succes"></p>
@@ -96,7 +97,6 @@
             </form>
         </section>
         </main>
-    </header>
     <footer>
          <ul>
                 <li><p>telephone:+216 74 000 000</p></li>
